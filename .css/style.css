@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/bgpattern3.jpg);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  padding: 10px;
+  margin: 20px;
+}
+
+h2 {
+  color: rgb(31, 27, 27);
+  font-size: 3rem;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.bg-acordion {
+  background-color: rgb(255, 166, 1);
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.encabezado nav {
+  background-color: rgba(255, 198, 43, 0.699);
+  width: 100%;
+  padding: 10px 10px;
+  position: sticky;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.encabezado nav ul {
+  margin: auto;
+}
+
+.encabezado nav ul li {
+  list-style: none;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.encabezado nav ul li a {
+  color: black;
+  text-decoration: solid;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  margin: 10px;
+}
+
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.encabezado-img {
+  width: 90%;
+  height: 600px;
+  padding: 10px;
+}
+
+article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-black {
+  color: rgb(0, 0, 0);
+}
+
+.text-grey {
+  color: rgb(68, 66, 66);
+}
+
+.bg-orange {
+  background-color: rgba(243, 188, 38, 0.699);
+}
+
+.bg-light {
+  background-color: rgba(194, 194, 194, 0.651);
+}
+
+.introduccion-articulo {
+  width: 90%;
+  height: auto;
+  padding: 30px 20px;
+  margin: 15px auto;
+  border: double black 5px;
+  overflow: auto;
+}
+
+.pie-titulo {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.pie-img {
+  width: 50px;
+}
+
+.galeria-fotos {
+  width: 400px;
+  height: 400px;
+}
+
+.galeria-orden {
+  width: 90%;
+  padding: 20px;
+  margin: 30px;
+  overflow: auto;
+  border: double rgb(110, 100, 100) 5px;
+}
+
+.tabla-tamaño {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  height: 300px;
+  margin: 30px;
+  padding: 30px;
+}
+
+.form-organizacion {
+  font-size: 20px;
+  padding: 10px;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.map-location {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
+.order3 {
+  order: 3;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.interlineado {
+  margin: 5px;
+  line-height: 35px;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300px;
+}
+
+.promocion {
+  display: flex;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+#productos {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  background-color: rgba(255, 187, 61, 0);
+  grid-area: productos;
+}
+
+#productos .productos {
+  margin: 20px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fotos {
+  width: 60%;
+  height: 60%;
+}
+
+.precios {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#productos .promocion article {
+  margin: 20px;
+  padding: 10px;
+  overflow: auto;
+  background-color: rgb(248, 151, 33);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondNav {
+  background-color: white;
+  color: #676565;
+  padding: 10px;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+}
+
+.secondNav img {
+  width: 80%;
+}
+
+#botonera {
+  grid-area: nav;
+}
+
+#lista {
+  grid-area: lista;
+  background-color: rgba(252, 178, 67, 0);
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+#header {
+  grid-area: header;
+}
+
+#promocion {
+  grid-area: promocion;
+}
+
+#secondNav {
+  grid-area: lista;
+}
+
+#pie {
+  grid-area: pie;
+  justify-content: center;
+}
+
+#introduccion {
+  grid-area: intro;
+  justify-content: center;
+}
+
+@media (max-width: 2000px) {
+  .overflow {
+    overflow-x: hidden;
+  }
+  .encabezado nav ul {
+    display: flex;
+    margin: auto;
+  }
+  .productos {
+    margin: auto;
+    padding: 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .foto-promo {
+    width: 30%;
+  }
+  .fotos {
+    width: 90%;
+    margin: auto;
+  }
+  .galeria-fotos {
+    width: 30%;
+  }
+  header {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .contenedor {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "nav nav" "lista productos" "promocion promocion" "pie pie";
+  }
+}
+@media (max-width: 1024px) {
+  .overflow {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .encabezado nav ul {
+    display: flex;
+    margin: auto;
+  }
+  .productos {
+    margin: auto;
+    padding: 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .interlineado {
+    margin: 5px;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300px;
+  }
+  .fotos {
+    width: 90%;
+    margin: auto;
+  }
+  .foto-promo {
+    width: 30%;
+    height: auto;
+  }
+  .precios {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-areas: "nav nav " "lista productos " "promocion promocion " "pie pie ";
+  }
+}
+@media (max-width: 992px) {
+  .reverseRow {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .overflow {
+    overflow-x: hidden;
+  }
+  body {
+    width: 100%;
+  }
+  .promocion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .fotos {
+    width: 70%;
+    margin: auto;
+  }
+  .foto-promo {
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+  .encabezado-img {
+    display: none;
+  }
+  .precios {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-areas: "nav nav " "lista productos " "promocion promocion " "pie pie ";
+  }
+}
+@media (max-width: 320px) {
+  .overflow {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .fotos {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  .encabezado-img {
+    display: none;
+  }
+  .secondNav {
+    text-align: center;
+    align-content: stretch;
+    font-size: 2rem;
+    padding: 5px;
+  }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .promocion {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: "nav" "lista" " productos" "promocion" "pie";
+  }
+}
+.translate :hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.degrade1 {
+  background: linear-gradient(0deg, rgb(251, 248, 152) 0%, rgb(251, 164, 6) 100%, rgba(0, 0, 0, 0.7539390756) 100%);
+}
+
+.rotate:hover {
+  transform: rotateZ(360deg);
+  transition: transform 3s;
+}
+
+.scale:hover {
+  transform: scale(1.2, 1.3);
+  cursor: pointer;
+  transition: transform 3s;
+}
+
+@keyframes textAlpha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.textAlpha {
+  animation-name: textAlpha;
+  animation-duration: 3s;
+}
+
+@keyframes footerBackground {
+  0% {
+    background-color: rgba(253, 185, 59, 0);
+  }
+  50% {
+    background-color: rgb(255, 185, 55);
+  }
+  100% {
+    background-color: rgba(255, 166, 0, 0.76);
+  }
+}
+.bg-animated {
+  animation-name: footerBackground;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes headerAnimated {
+  0% {
+    background-image: url(../img/header1.jpg);
+  }
+  50% {
+    background-image: url(../img/header2.jpg);
+  }
+  100% {
+    background-image: url(../img/header3.jpg);
+  }
+}
+.headerAnimated {
+  animation-name: headerAnimated;
+  animation-duration: 5s;
+}
+
+/*# sourceMappingURL=style.css.map */
